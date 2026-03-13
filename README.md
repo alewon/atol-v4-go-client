@@ -1,19 +1,9 @@
-# atol-v4-go-client
-
-Go-клиент для ATOL Online v4.
-
-Текущая реализация основана на локальной спецификации из [`doc.md`](./doc.md), которая соответствует документации ATOL версии 5.23.
+# Go-клиент для ATOL Online v4 (ФФД 1.05)
 
 ## Установка
 
 ```bash
 go get github.com/alewon/atol-v4-go-client
-```
-
-## Импорт
-
-```go
-import "github.com/alewon/atol-v4-go-client"
 ```
 
 ## Быстрый старт
@@ -93,27 +83,3 @@ func main() {
 	fmt.Println(reportResponse.Status)
 }
 ```
-
-## Доступные методы
-
-- `PostToken`
-- `GetToken`
-- `Sell`
-- `SellRefund`
-- `Buy`
-- `BuyRefund`
-- `SellCorrection`
-- `BuyCorrection`
-- `Report`
-
-## Вклад в проект
-
-См. [`CONTRIBUTING.md`](./CONTRIBUTING.md).
-
-## Безопасность
-
-См. [`SECURITY.md`](./SECURITY.md).
-
-## Лицензия
-
-MIT. См. [`LICENSE`](./LICENSE).
