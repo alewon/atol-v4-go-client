@@ -9,7 +9,7 @@ The package is intentionally straightforward:
 - request and response structs for each method are declared explicitly;
 - public API is kept flat and predictable.
 
-The current implementation is based on the local specification in [`doc.md`](./doc.md).
+The current implementation is based on the local specification in [`doc.md`](./doc.md), which reflects ATOL documentation version 5.23.
 
 ## Install
 
@@ -122,7 +122,7 @@ func main() {
 
 ## Stability
 
-This package follows the local API description in [`doc.md`](./doc.md). If ATOL changes the API, the Go models should be updated explicitly.
+This package follows the local API description in [`doc.md`](./doc.md), based on ATOL documentation version 5.23. If ATOL changes the API, the Go models should be updated explicitly.
 
 ## Contributing
 

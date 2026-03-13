@@ -6,6 +6,11 @@ All notable changes to this project will be documented in this file.
 
 - No unreleased changes yet.
 
+## 1.0.0 - 2026-03-13
+
+- Declared the package documentation baseline as ATOL documentation version 5.23 in the README.
+- Set the module's minimum supported Go version to 1.20.
+
 ## 0.1.0 - 2026-03-13
 
 - Added a simple ATOL Online v4 Go client.

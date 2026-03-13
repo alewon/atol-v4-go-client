@@ -1,3 +1,3 @@
 module github.com/alewon/atol-v4-go-client
 
-go 1.26
+go 1.20
