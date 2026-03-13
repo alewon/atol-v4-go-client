@@ -1,29 +1,22 @@
 # atol-v4-go-client
 
-Simple Go client for ATOL Online v4.
+Go-клиент для ATOL Online v4.
 
-The package is intentionally straightforward:
+Текущая реализация основана на локальной спецификации из [`doc.md`](./doc.md), которая соответствует документации ATOL версии 5.23.
 
-- no request validation;
-- no attempt to deduplicate request and response models across methods;
-- request and response structs for each method are declared explicitly;
-- public API is kept flat and predictable.
-
-The current implementation is based on the local specification in [`doc.md`](./doc.md), which reflects ATOL documentation version 5.23.
-
-## Install
+## Установка
 
 ```bash
 go get github.com/alewon/atol-v4-go-client
 ```
 
-## Package
+## Импорт
 
 ```go
 import "github.com/alewon/atol-v4-go-client"
 ```
 
-## Quick start
+## Быстрый старт
 
 ```go
 package main
@@ -101,7 +94,7 @@ func main() {
 }
 ```
 
-## Available methods
+## Доступные методы
 
 - `PostToken`
 - `GetToken`
@@ -113,25 +106,14 @@ func main() {
 - `BuyCorrection`
 - `Report`
 
-## Project principles
+## Вклад в проект
 
-- Keep code obvious.
-- Prefer explicit types over shared abstractions.
-- Do not add validation layer.
-- Do not hide API details behind complex helpers.
+См. [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
-## Stability
+## Безопасность
 
-This package follows the local API description in [`doc.md`](./doc.md), based on ATOL documentation version 5.23. If ATOL changes the API, the Go models should be updated explicitly.
+См. [`SECURITY.md`](./SECURITY.md).
 
-## Contributing
+## Лицензия
 
-See [`CONTRIBUTING.md`](./CONTRIBUTING.md).
-
-## Security
-
-See [`SECURITY.md`](./SECURITY.md).
-
-## License
-
-MIT. See [`LICENSE`](./LICENSE).
+MIT. См. [`LICENSE`](./LICENSE).

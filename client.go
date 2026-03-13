@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
-	"errors"
 	"fmt"
 	"io"
 	"net/http"
@@ -102,7 +101,7 @@ func (c *Client) do(req *http.Request, out any) error {
 	if resp.StatusCode < http.StatusOK || resp.StatusCode >= http.StatusMultipleChoices {
 		body, readErr := io.ReadAll(resp.Body)
 		if readErr != nil {
-			return errors.Join(&ErrorResponse{StatusCode: resp.StatusCode}, readErr)
+			return fmt.Errorf("unexpected http status: %d: read response body: %w", resp.StatusCode, readErr)
 		}
 
 		return &ErrorResponse{
