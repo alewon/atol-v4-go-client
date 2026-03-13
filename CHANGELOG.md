@@ -6,16 +6,12 @@ All notable changes to this project will be documented in this file.
 
 - No unreleased changes yet.
 
-## 1.0.1 - 2026-03-13
-
-- Translated the README into Russian and simplified it to the essential package usage information.
-- Lowered the module's minimum supported Go version from 1.20 to 1.18.
-- Replaced the HTTP error body read fallback so it remains compatible with Go 1.18.
-
 ## 1.0.0 - 2026-03-13
 
 - Declared the package documentation baseline as ATOL documentation version 5.23 in the README.
-- Set the module's minimum supported Go version to 1.20.
+- Translated the README into Russian and simplified it to the essential package usage information.
+- Lowered the module's minimum supported Go version to 1.18.
+- Replaced the HTTP error body read fallback so it remains compatible with Go 1.18.
 
 ## 0.1.0 - 2026-03-13
 
